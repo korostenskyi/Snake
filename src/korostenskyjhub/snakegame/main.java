@@ -40,7 +40,7 @@ public class main extends JPanel implements ActionListener {
     //Graphic
     public void paint(Graphics g){
         //Background color
-        g.setColor(color(5, 50, 10));
+        g.setColor(color(0, 0, 0));
         g.fillRect(0, 0, WIDTH*SCALE, HEIGHT*SCALE);
         //Comment next line to remove the grid
         g.setColor(color(255, 216, 0));
@@ -52,11 +52,13 @@ public class main extends JPanel implements ActionListener {
             g.drawLine(0, yy, WIDTH*SCALE, yy);
         }
 
+        //Snake color
         for(int d = 0; d < s.length; d++){
-            g.setColor(color(20, 30, 150));
+            g.setColor(color(65, 168, 21));
             g.fillRect(s.snakeX[d]*SCALE+1, s.snakeY[d]*SCALE+1, SCALE-1, SCALE-1);
         }
 
+        //Apple color
         g.setColor(color(255, 0, 0));
         g.fillRect(a.posX*SCALE+1, a.posY*SCALE+1, SCALE-1, SCALE-1);
     }
@@ -66,6 +68,7 @@ public class main extends JPanel implements ActionListener {
 
     public static void main(String[] args){
         JFrame f = new JFrame();
+        f.setTitle(NAME);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setResizable(false);
         f.setSize(WIDTH*SCALE+7, HEIGHT*SCALE+30);
