@@ -4,4 +4,4 @@ I hope you enjoy it. <br>
 You can download and edit this game - sorce code is open. <br>
 
 My contacts:<br>
-<a href = "https://t.me/rkorostenskyj">Telegram</a>
+<a href = "https://t.me/korostenskyi">Telegram</a>
